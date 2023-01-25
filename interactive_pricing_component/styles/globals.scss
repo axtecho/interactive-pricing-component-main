@@ -1,0 +1,22 @@
+@font-face {
+  src: url(https://fonts.google.com/specimen/Manrope);
+  font-family: "Manrope";
+}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "manrope";
+  font-weight: 600;
+}
+
+.hello {
+  color: yellow;
+}
+.mydiv {
+  font-size: 100px;
+}

@@ -1,0 +1,61 @@
+@use "./colors" as color;
+
+.slidecontainer {
+  padding: 0 1.7rem; /* Width of the outside container */
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: color.$light_grayish_blue; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 10px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url("../public/images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 0;
+  background: url("../public/images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: color.$strong_cyan;
+  box-shadow: 0px 10px 20px -1px rgba(16, 213, 194, 1);
+
+  cursor: pointer;
+}
+.slider::-moz-range-thumb:hover {
+  background-color: color.$stronger_cyan;
+}
+input[type="range"]::-moz-range-progress {
+  background-color: color.$strong_cyan;
+  height: 10px;
+  border-radius: 10px;
+}

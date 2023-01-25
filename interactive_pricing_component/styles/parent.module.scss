@@ -1,0 +1,36 @@
+@import "colors";
+
+.parent {
+  display: grid;
+  article {
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1/-1;
+    padding-top: 5rem;
+    background-image: url(../public/images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+
+    z h1 {
+      padding-bottom: 0.5rem;
+      color: $dark_desaturated_blue;
+    }
+    p {
+      opacity: 0.5;
+    }
+    p:first-of-type {
+      padding-bottom: 0.2rem;
+    }
+  }
+  div {
+    background-image: url(../public/images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 10vh;
+    grid-row: 1;
+    grid-column: 1/-1;
+    padding: 20vh 0;
+    z-index: -1;
+  }
+}
