@@ -11,15 +11,13 @@
     background-repeat: no-repeat;
     background-position: 50% 20%;
 
-    z h1 {
-      padding-bottom: 0.5rem;
+    h1 {
       color: $dark_desaturated_blue;
+      margin-bottom: 0.5rem;
     }
     p {
       opacity: 0.5;
-    }
-    p:first-of-type {
-      padding-bottom: 0.2rem;
+      margin: 0;
     }
   }
   div {

@@ -27,7 +27,9 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
+.slider:hover {
+  background-color: $strong_cyan;
+}
 .slider:before {
   position: absolute;
   content: "";

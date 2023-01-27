@@ -1,4 +1,4 @@
-import styles from "../styles/toggleswitch.module.scss";
+import styles from "../styles/monthlyBillingButton.module.scss";
 export default function ToggleButton() {
   return (
     <>
